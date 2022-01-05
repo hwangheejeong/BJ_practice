@@ -15,20 +15,19 @@ public class n2869 {
 		int b = sc.nextInt();
 		int v = sc.nextInt();
 		
-		//하루에 올라가는 높이
-		int length=0;
-		int days = 0;
+		//하루에 이동하는 거리 a-b
+		//꼭대기에 도달하면 움직이지 않기 때문에 마지막 날에 미끄러지는 b를 감안하지 않는다면 총 거리는 v-b
+		//(v-b)/(a-b)가 딱 떨어지지 않을 수 있으니 처음부터 v에서 1을 빼거 마지막에 1을 더해준다
 		
-		while(length<v) {
-			length +=a;
-			days++;
-			
-			if(length<v) {
-				length -= b;
-			}
-			else 
-				break;
-		}
+		int days = (v-b-1)/(a-b)+1;
+		
+//		while(v>0) {
+//			v=v-a;
+//			days +=1;
+//			if(v>0) 
+//				v= v+b;
+//		}
+		
 		
 		System.out.println(days);
 	}

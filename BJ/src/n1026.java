@@ -33,9 +33,8 @@ public class n1026 {
 			B[i] = sc.nextInt();
 		}
 		
-		//A 재배열해서 S의 최솟값
-		//B의 제일 큰 값을 A의 제일 작은 값과
-		
+		//A와 B 오름차순 정렬
+		//A는 앞부분부터 B는 뒷부분부터
 		Arrays.sort(A);
 		Arrays.sort(B);
 		

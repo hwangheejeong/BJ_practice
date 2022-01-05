@@ -9,7 +9,6 @@ public class n2839 {
 		
 		//상근이가 배달해야하는 무게S N입력
 		int N = sc.nextInt();
-		int n=N;
 		int m=0;
 		
 		//설탕 3kg 5kg 최소개수 구하기
@@ -26,13 +25,13 @@ public class n2839 {
 				m++;
 			}
 			//5보다 큼
-			else if(N>=5) {
+			else if(N>5) {
 				N=N-5;
 				m++;
 			}
 			//else -1
 			else {
-				m=m-1;
+				m=-1;
 				break;
 			}
 			

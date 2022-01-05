@@ -5,19 +5,19 @@ public class n2869 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		//³ª¹«¸·´ë±æÀÌ v
-		//³·¿¡´Â a ¿Ã¶ó°¨
-		//¹ã¿¡´Â b ¹Ì²ô·¯Á®
+		//ë‚˜ë¬´ë§‰ëŒ€ê¸¸ì´ v
+		//ë‚®ì—ëŠ” a ì˜¬ë¼ê°
+		//ë°¤ì—ëŠ” b ë¯¸ë„ëŸ¬ì ¸
 		
 		Scanner sc = new Scanner(System.in);
-		//a b v ÀÔ·Â
+		//a b v ìž…ë ¥
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		int v = sc.nextInt();
 		
-		//ÇÏ·ç¿¡ ÀÌµ¿ÇÏ´Â °Å¸® a-b
-		//²À´ë±â¿¡ µµ´ÞÇÏ¸é ¿òÁ÷ÀÌÁö ¾Ê±â ¶§¹®¿¡ ¸¶Áö¸· ³¯¿¡ ¹Ì²ô·¯Áö´Â b¸¦ °¨¾ÈÇÏÁö ¾Ê´Â´Ù¸é ÃÑ °Å¸®´Â v-b
-		//(v-b)/(a-b)°¡ µü ¶³¾îÁöÁö ¾ÊÀ» ¼ö ÀÖÀ¸´Ï Ã³À½ºÎÅÍ v¿¡¼­ 1À» »©°Å ¸¶Áö¸·¿¡ 1À» ´õÇØÁØ´Ù
+		//í•˜ë£¨ì— ì´ë™í•˜ëŠ” ê±°ë¦¬ a-b
+		//ê¼­ëŒ€ê¸°ì— ë„ë‹¬í•˜ë©´ ì›€ì§ì´ì§€ ì•Šê¸° ë•Œë¬¸ì— ë§ˆì§€ë§‰ ë‚ ì— ë¯¸ë„ëŸ¬ì§€ëŠ” bë¥¼ ê°ì•ˆí•´ì„œ ì´ ê±°ë¦¬ëŠ” v-b
+		//(v-b)/(a-b)ê°€ ë”± ë–¨ì–´ì§€ì§€ ì•Šì„ ìˆ˜ ìžˆìœ¼ë‹ˆ ì²˜ìŒë¶€í„° vì—ì„œ 1ì„ ë¹¼ê±° ë§ˆì§€ë§‰ì— 1ì„ ë”í•´ì¤€ë‹¤
 		
 		int days = (v-b-1)/(a-b)+1;
 		
